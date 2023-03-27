@@ -1,0 +1,17 @@
+Create database with preferred name "profanityModeration"
+Update "src\main\resources\application.yml" file with database name and credentials
+If you are running application locally, sping up kafka and elasticsearch containers:
+    * cd kafka
+    * docker compose up
+    * cd elasticsearch
+    * docker compose up
+Update kafka and delasticsearch endpoints in application.yml file if not running locally.
+
+In base directory, to generate jar of application:
+    * mvn clean install
+To run the application:
+    * java -jar profanity-0.0.1-SNAPSHOT.jar
+
+
+Use folloing postman API collection to call APIs:
+https://www.getpostman.com/collections/1cb5fa352002a945808c
